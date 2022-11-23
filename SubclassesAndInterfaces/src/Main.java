@@ -17,7 +17,7 @@ public class Main {
         rooms[5] = new Room(12, 3, 2);
 
         Arrays.sort(rooms);
-        
+
         for(int i = 0; i < rooms.length; i++)
             System.out.println(rooms[i].toString());
 
