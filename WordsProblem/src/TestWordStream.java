@@ -132,8 +132,8 @@ public class TestWordStream {
 
     public static Map<Character, Integer> letters(String word) {
 
-        return word.toLowerCase().chars()
-                .mapToObj(character -> (char) character)
+        return word.chars()
+                .mapToObj(character -> (char) Character.toLowerCase(character))
                 .collect(Collectors.groupingBy(Function.identity(), TreeMap::new, Collectors.summingInt(character -> 1)));
 
     }
